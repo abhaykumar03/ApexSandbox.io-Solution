@@ -1,0 +1,4 @@
+public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
+    Boolean ascendingOrderRes = (c <= b && b >= a) ? true: false;
+    return ascendingOrderRes;
+}
