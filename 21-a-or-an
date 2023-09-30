@@ -1,5 +1,5 @@
 public String aOrAn(String word) {
-   String givenIp;
+   String result;
    word = word.toLowerCase();
     if (
             word.startsWith('a') || 
@@ -8,10 +8,10 @@ public String aOrAn(String word) {
             word.startsWith('o') || 
             word.startsWith('u')
         ) {
-       givenIp = 'an ' + word;
+       result = 'an ' + word;
     } 
     else {
-       givenIp = 'a ' + word;
+       result = 'a ' + word;
     }
-    return givenIp;
+    return result;
 }
