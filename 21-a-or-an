@@ -8,10 +8,10 @@ public String aOrAn(String word) {
             word.startsWith('o') || 
             word.startsWith('u')
         ) {
-       givenIp = 'an ' + word;
+       givenIp = 'an' + word;
     } 
     else {
-       givenIp = 'a ' + word;
+       givenIp = 'a' + word;
     }
     return givenIp;
 }
