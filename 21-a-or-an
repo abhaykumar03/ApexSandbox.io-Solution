@@ -1,0 +1,16 @@
+public String aOrAn(String word) {
+   String givenIp;
+    if (
+            word.startsWith('a') || 
+            word.startsWith('e') || 
+            word.startsWith('i') || 
+            word.startsWith('o') || 
+            word.startsWith('u')
+        ) {
+        givenIp = 'An' + ' ' + word;
+    } 
+    else {
+        givenIp = 'A' + ' ' + word;
+    }
+    return givenIp;
+}
