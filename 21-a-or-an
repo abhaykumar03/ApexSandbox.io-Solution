@@ -1,5 +1,6 @@
 public String aOrAn(String word) {
    String givenIp;
+   word = word.toLowercase();
     if (
             word.startsWith('a') || 
             word.startsWith('e') || 
