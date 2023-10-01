@@ -1,4 +1,9 @@
 public Boolean isEndWithZero(Integer num){
-    Boolean result = (num % 10 == 0) ? true :false;
-    return result;
+    Integer divisor = 10;
+        if(num/divisor == 0){
+         return true;   
+    }
+        else {
+         return false;
+    }
 }
