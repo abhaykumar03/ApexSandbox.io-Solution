@@ -1,9 +1,5 @@
 public Boolean isEndWithZero(Integer num){
     Integer divisor = 10;
-        if(num/divisor == 0){
-         return true;   
-    }
-        else {
-         return false;
-    }
+    Integer result = num/divisor
+    return x = (result == 0) ? true : false;
 }
