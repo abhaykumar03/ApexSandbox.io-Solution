@@ -1,6 +1,6 @@
 public Boolean isEndWithZero(Integer num){
     Integer divisor = 10;
-    Integer result = num/divisor
+    Integer result = Math.mod(num,divisor)
     Boolean x = (result == 0) ? true :false; 
     return x;
 }
