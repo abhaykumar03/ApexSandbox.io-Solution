@@ -5,7 +5,7 @@ String fullName;
         return fullName;
     }
     else if(String.isBlank(firstName) || String.isBlank(lastName)){
-        fullName = lastName + firstName;
+        fullName = lastName,firstName;
         return fullName;
     }
     else{
