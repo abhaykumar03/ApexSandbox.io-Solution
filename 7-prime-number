@@ -1,0 +1,8 @@
+public Boolean isPrime(Integer num) {
+ Integer divisibilityByOne = Math.Mod(num,1);
+ Integer divisibilityByItself = Math.Mod(num,num);
+ if((divisibilityByOne == 0) && (divisibilityByItself == 0))
+    return true;
+ else
+    return false;
+}
