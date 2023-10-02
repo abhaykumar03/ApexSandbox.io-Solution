@@ -1,5 +1,5 @@
 public String formatName(String firstName, String lastName) {
-String fullName ='';
+String fullName;
     if((String.isNotBlank(firstName) && String.isNotBlank(lastName)){
         fullName = lastName +','+firstName;
         return fullName;
