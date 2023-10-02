@@ -1,7 +1,7 @@
 public Integer rockPaperScissors(String player1, String player2) {
     if(('rock','scissor') || ('paper','scissors')  || ('paper','rock'))
     return 1;
-    else if(!(('rock','scissor') || ('paper','scissors')  || ('paper','rock')))
+    else if(('scissor','rock') || ('scissors','paper')  || ('rock','paper'))
     return 2;
     else
     return 0;
