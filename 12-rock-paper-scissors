@@ -3,6 +3,6 @@ public Integer rockPaperScissors(String player1, String player2) {
     return 1;
     else if(('scissor','rock') || ('scissors','paper')  || ('rock','paper'))
     return 2;
-    else
+    else if(('rock','rock') || ('paper','paper') ||  ('scissors','scissors'))
     return 0;
 }
