@@ -4,11 +4,11 @@ String fullName ='';
         fullName = lastName +','+firstName;
         return fullName;
     }
-    else if(String.isBlank(firstName)){
+    else if(String.isBlank(firstName) && String.isNotBlank(lastName)){
         fullName = lastName;
         return fullName;
     }
-    else if(String.isBlank(lastName)){
+    else if(String.isNotBlank(firstName)&& String.isBlank(lastName)){
         fullName = firstName;
         return fullName;
     }
