@@ -1,8 +1,18 @@
 public Integer rockPaperScissors(String player1, String player2) {
-    if(('rock','scissor') && ('paper','scissors')  && ('paper','rock'))
-    return 1;
-    else if(('scissor','rock') && ('scissors','paper')  && ('rock','paper'))
-    return 2;
-    else if(('rock','rock') && ('paper','paper') && ('scissors','scissors'))
-    return 0;
+    if(('rock','scissors') ||
+       ('scissors','paper') ||
+       ('paper','rock')){
+           return 1;
+       }
+    else if(('rock','paper') ||
+            ('paper','scissors') ||
+            ('scissors','rock')){
+                return 2;
+            }
+    else(('rock','rock') ||
+        ('paper','paper') ||
+        ('scissors','scissors')){
+            return 0;
+        }
+   
 }
