@@ -1,8 +1,13 @@
 public Boolean isPrime(Integer num) {
+    List<Integer> factors = new List<Integer>();
         for(Integer i=2; i < num; i++){
+        Integer x = Math.Mod(num,i);
+        System.debug('x==>'+x);
+        factors.add(x);
         if(Math.Mod(num,i)==0){
             return false;
         }
     }
+    System.debug('factors==>'+factors);
     return true;
 }
