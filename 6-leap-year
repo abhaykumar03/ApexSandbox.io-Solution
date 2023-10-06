@@ -1,4 +1,6 @@
 public Boolean isLeapYear(Integer year) {
+    // a year is a leap year if it is divisible by 4, 
+    //except when it is divisible by 100 but not by 400.
     if(Math.mod(year,4)==0 &&  
       (Math.mod(year,100)!=0) || 
       (Math.mod(year,400)==0) )
