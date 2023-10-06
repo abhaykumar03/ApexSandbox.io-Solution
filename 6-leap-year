@@ -1,8 +1,5 @@
 public Boolean isLeapYear(Integer year) {
-    if(Math.Mod(year,4) && (Math.Mod(year,100)) ){
-        return true;
-    }
-    else if(Math.Mod(year,100) && Math.Mod(year,400)){
+    if(Math.Mod(year,4) && (Math.Mod(year,100) && Math.Mod(year,400)) ){
         return true;
     }
     else {
