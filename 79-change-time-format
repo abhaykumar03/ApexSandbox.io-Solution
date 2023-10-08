@@ -1,0 +1,38 @@
+public String changeTimeFormat(String strTime) {
+    //code here
+    /code here
+
+     String returnString;
+
+     List<String> timeStr=strTime.split('//:');
+
+     Integer hour=Integer.valueOf(timeStr[0]);
+
+     Integer minute=Integer.valueOf(timeStr[1]);
+
+       if(hour<12 && hour>0){
+
+         returnString=strTime+' AM';
+
+          }
+
+        else if(hour==0){
+
+          returnString= '12:00 AM';
+
+         }
+
+        else if(hour==12){
+
+           returnString= strTime+' PM';
+
+        }
+
+       else{
+
+         returnString=  String.valueOf((hour-12))+':'+timeStr[1]+' PM';
+
+         }
+
+return returnString;
+}
