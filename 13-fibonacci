@@ -1,11 +1,12 @@
 public Integer fibonacci(Integer n) {
-    Integer nth;
-    if(n ==1 || n == 2) {
-        nth = n;
-        return nth;
-    }
-    else {
-        nth = n + (n - 1);
-        return nth;
-    }
+   Integer fib; 
+   if(n == 0){
+      return 1;
+   }
+   else {
+       for(Integer = 1; i <= n; i++){
+           fib += i;
+       }
+       return fib;
+   }
 }
