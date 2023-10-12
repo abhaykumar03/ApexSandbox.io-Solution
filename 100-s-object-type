@@ -1,6 +1,6 @@
 public Boolean isTypeAccount(sObject record)
 {
-Account acc = new Account(sObject);
+Account acc = new Account(record);
 Boolean isAccount = TypeChecker.isTypeAccount(acc);
 if(isAccount == true)
 {
