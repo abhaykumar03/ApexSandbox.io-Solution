@@ -1,12 +1,10 @@
 public Boolean isTypeAccount(sObject record)
-{
-Account acc = new Account(record);
-Boolean isAccount = TypeChecker.isTypeAccount(acc);
-if(isAccount == true)
-{
-    return true;
-}
-else{
-    return false;
-}
+    if (record != null) {
+        if (record instanceof Account) {
+            return true;
+        }
+    } 
+    else {
+        return false;
+    }
 }
