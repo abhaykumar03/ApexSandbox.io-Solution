@@ -1,3 +1,7 @@
 public Boolean isTypeAccount(sObject record)
-    return record instanceof Account ? true : false
+ if (record instanceof Account) {
+        return true;
+    } else {
+        return false;
+    }
 }
