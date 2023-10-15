@@ -1,3 +1,4 @@
 public Boolean isTypeAccount(sObject record)
- return record instanceof Account;
+ String sobjectType = record?.getSObjectType().getDescribe().getName();
+    return (sobjectType == 'Account');
 }
