@@ -6,7 +6,7 @@ public Id insertStudent(String name, String email) {
     stdRec.add(ac);
 
     if(stdRec.size() > 0){
-      insert stdRec;  
+      insert stdRec; 
+      return stdRec.Id; 
     }
- return stdRec.Id;
 }
