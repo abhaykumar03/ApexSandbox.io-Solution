@@ -1,12 +1,9 @@
 public Id insertStudent(String name, String email) {
-    List<apxio__Student__c> stdRec = new List<apxio__Student__c>();
     apxio__Student__c ac = new apxio__Student__c();
     ac.Name = name;
     ac.apxio__Email__c =email;
-    stdRec.add(ac);
 
-    if(stdRec.size() > 0){
-      insert stdRec; 
-      return stdRec.Id; 
+    insert ac; 
+    return ac.Id; 
     }
 }
