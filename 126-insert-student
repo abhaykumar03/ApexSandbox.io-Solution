@@ -5,7 +5,7 @@ public Id insertStudent(String name, String email) {
     ac.apxio__Email__c =email;
     stdRec.add(ac);
 
-    if(!String.isEmpty(stdRec)){
+    if(stdRec.size() > 0){
       insert stdRec;  
     }
  return stdRec.Id;
