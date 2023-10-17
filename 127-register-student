@@ -1,0 +1,9 @@
+public String registerStudent(String name, String phone, String email) {
+    apxio__Student__c stdRec = new apxio__Student__c();
+    stdRec.name = name;
+    stdRec.apxio__Phone__c = phone;
+    stdRec.apxio__Email__c = email;
+
+    insert stdRec;
+    return stdRec.apxio__Registration_Number__c;
+}
