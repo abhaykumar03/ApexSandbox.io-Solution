@@ -5,5 +5,4 @@ public String registerStudent(String name, String phone, String email) {
     stdRec.apxio__Email__c = email;
     insert stdRec;
     List<apxio__Student__c> studentList = [Select Id,apxio__Registration_Number__c from apxio__Student__c ];
-    return studentList.apxio__Registration_Number__c;
-}
+    return studentList.Id;
