@@ -3,6 +3,7 @@ public String registerStudent(String name, String phone, String email) {
     stdRec.name = name;
     stdRec.apxio__Phone__c = phone;
     stdRec.apxio__Email__c = email;
+    stdRec.Id = Id;
 
     insert stdRec;
     return stdRec.apxio__Registration_Number__c;
