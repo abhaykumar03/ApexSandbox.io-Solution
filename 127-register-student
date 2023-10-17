@@ -1,10 +1,14 @@
 public String registerStudent(String name, String phone, String email) {
     apxio__Student__c stdRec = new apxio__Student__c();
-    stdRec.name = name;
+    stdRec.Name = name;
     stdRec.apxio__Phone__c = phone;
     stdRec.apxio__Email__c = email;
     insert stdRec;
-    List<apxio__Student__c> studentList = [Select Id,apxio__Registration_Number__c 
-                                           from apxio__Student__c where Id =: stdRec.Id];
-    return studentList.get(1);
+    stdRec = [SELECT apxio__Registration_Number__c FROM apxio__Student__c WHERE Id = :stdRec.Id ];
+    
+    if (stdRec != null) {
+        return stdRec.apxio__Registration_Number__c;
+    } else {
+        return null;
+    }
 }
