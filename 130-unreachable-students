@@ -1,3 +1,4 @@
 public List<apxio__Student__c> selectUnreachableStudents() {
     List<apxio__Student__c> missingStdList = [Select Id, Name,apxio__Email__c from apxio__Student__c where Name = null and apxio__Email__c = null Order by Name];
+    return missingStdList;
  }
