@@ -7,7 +7,7 @@ public void createCourseAndClass(String name, String description) {
     cr = [Select Id, Name from apxio__Course__c];
 
     apxio__Class__c cl = new apxio__Class__c();
-    cl.Id = apxio__Course__c.Id;
+    cl.Id = cr.Id;
     cl.Name = cr.Name;
     String sizeString = cr.apxio__Course_Details__c;
     if(sizeString.length() > 255 ){
