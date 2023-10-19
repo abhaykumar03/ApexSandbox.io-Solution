@@ -17,6 +17,5 @@ public void createCourseAndClass(String name, String description) {
         cl.apxio__Description__c = cr.apxio__Course_Details__c.left(255);
        }
     insert(cl);
-    return;
 }
 
