@@ -1,0 +1,4 @@
+public List<apxio__Student__c> selectStudentsWithoutContactInfo() {
+   List<apxio__Student__c> stdRecList = [Select Id, Name from 
+   apxio__Student__c where apxio__Email__c = null Or apxio__Phone__c = null Order By Name Asc];
+}
