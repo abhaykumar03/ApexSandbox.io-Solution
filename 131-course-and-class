@@ -4,18 +4,17 @@ public void createCourseAndClass(String name, String description) {
     cr.apxio__Course_Details__c = description;
     insert cr;
 
-    cr = [Select Id, Name from apxio__Course__c where Id= :cr.Id];
+    cr = [SELECT Id, Name, apxio__Course_Details__c FROM apxio__Course__c WHERE Id = :cr.Id];
 
     apxio__Class__c cl = new apxio__Class__c();
-    cl.Id = cr.Id;
+    cl.apxio__Course__c = cr.Id; 
     cl.Name = cr.Name;
 
-    if(cr.apxio__Course_Details__c!=null and cr.apxio__Course_Details__c.length() < 255){
-	  cl.apxio__Description__c = cr.apxio__Course_Details__c;
-    }
-    else{
+    if (cr.apxio__Course_Details__c != null && cr.apxio__Course_Details__c.length() < 255) {
+        cl.apxio__Description__c = cr.apxio__Course_Details__c;
+    } else {
         cl.apxio__Description__c = cr.apxio__Course_Details__c.left(255);
-       }
-    insert(cl);
+    }
+    insert cl;
 }
 
