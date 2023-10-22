@@ -5,6 +5,6 @@ public List<String> getNamesInAscOrder(List<String> accountNames)
     if (!sortedList.isEmpty()) {
         return sortedList;
     } else {
-        return new List<String>();
+        return new List<String>(null);
     }
 }
