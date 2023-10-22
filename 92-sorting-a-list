@@ -2,10 +2,9 @@ public List<String> getNamesInAscOrder(List<String> accountNames)
 {
     List<String> sortedList = new List<String>(accountNames);
     sortedList.sort();
-    if(!sortedList.isEmpty()){
+    if (!sortedList.isEmpty()) {
         return sortedList;
-    }
-    else{
+    } else {
         return new List<String>();
-    };
+    }
 }
