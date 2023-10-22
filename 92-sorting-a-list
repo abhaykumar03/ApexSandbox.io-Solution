@@ -2,5 +2,5 @@ public List<String> getNamesInAscOrder(List<String> accountNames)
 {
     List<String> sortedList = new List<String>(accountNames);
     sortedList.sort();
-    return sortedList.size() > 0 ? : sortedList : null ;
+    return sortedList.size() > 0 ? sortedList : null ;
 }
