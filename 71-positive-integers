@@ -1,9 +1,9 @@
 public List<Integer> positiveIntegers(List<Integer> numbers) {
-    List<Integer> positives = new List<Integer>();
+    List<Integer> positiveIntList = new List<Integer>();
     for (Integer i=0; i< numbers.size(); i++) {
         if (numbers.get(i) > 0) {
-            positives.add(numbers.get(i));
+            positiveIntList.add(numbers.get(i));
         }
     }
-    return positives;
+    return positiveIntList;
 }
