@@ -1,6 +1,5 @@
 public List<Integer> positiveIntegers(List<Integer> numbers) {
-    List<Integer> positiveIntList = new List<Integer>();
-
+    List positiveIntList = new List();
     for (Integer i = 0; i < numbers.size(); i++) { 
         if (numbers[i] >= 0) {
             positiveIntList.add(numbers[i]);
