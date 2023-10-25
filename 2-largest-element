@@ -2,7 +2,6 @@ public static Integer findLargest(List<Integer> nums) {
     Integer tempMax = nums.get(0);
     for(Integer i = 1; i < nums.size(); i++){
         if(nums.get(i) > tempMax){
-            j++;
             tempMax = nums.get(i);
         }
     }
