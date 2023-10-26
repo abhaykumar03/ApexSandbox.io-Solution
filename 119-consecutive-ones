@@ -1,0 +1,8 @@
+public Integer maxConsecutiveOnes(Integer[] numbers) {
+   Integer countMaxOne = 0;
+   for(Integer i = 0; i < numbers.size(); i++) {
+       if(numbers.get(i) != numbers.get(i+1)){
+           countMaxOne++;
+       }
+    return countMaxOne;
+}
