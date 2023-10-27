@@ -1,11 +1,10 @@
 public List<String> fullNames(List<String> firstNames, List<String> lastNames) {
-   List<String> fullNameList = new List<String>();
-   if((firstNames.isNotEmpty() AND lastNames.isNotEmpty()) AND 
-      firstNames.size() == lastNames.size()){
-          for(Integer i = 0; i < firstNames.size(); i++){
-            fullNameList fl = new fullNameList();
-            fl = firstNames.get(i) + ' ' + lastNames.get(i);
-            fullNameList.add(fl);
-          }
-      }
+    List<String> fullNameList = new List<String>();
+    if(!firstNames.isEmpty() && !lastNames.isEmpty() && firstNames.size() == lastNames.size()) {
+        for(Integer i = 0; i < firstNames.size(); i++) {
+            String fullName = firstNames.get(i) + ' ' + lastNames.get(i);
+            fullNameList.add(fullName);
+        }
+    }
+    return fullNameList;
 }
