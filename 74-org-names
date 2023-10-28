@@ -3,7 +3,7 @@ public List<String> orgNames(List<String> adjectives, List<String> animals) {
 
   for(Integer i=0; i < adjectives.size(); i++){
       for(Integer j=0; j < animals.size(); j++){
-         String adjAnimal = a.get(i) + '-'+ ani.get(j);
+         String adjAnimal = adjectives.get(i) + '-'+ animals.get(j);
           adjAnimalList.add(adjAnimal);
       }
   }
