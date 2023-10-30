@@ -1,0 +1,10 @@
+public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
+    if(!IsBlank(nums1)){
+    for(Integer nums2.contains(nums1)){
+        return true
+    }
+    else {
+    return false;
+    }
+    }
+}
