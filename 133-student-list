@@ -1,0 +1,17 @@
+public void insertStudents(List<String> studentNames, List<String> studentEmails) {
+    Map<String, String> stdNameEmailMap = new Map<String, String>();
+
+    for (Integer i = 0; i < studentNames.size(); i++) {
+        stdNameEmailMap.put(studentNames[i], studentEmails[i]);
+    }
+
+    List<apxio__Student__c> apxioStudents = new List<apxio__Student__c>();
+    for (String studentName : stdNameEmailMap.keySet()) {
+        apxio__Student__c apxioStudent = new apxio__Student__c(
+            Name = studentName,
+            apxio__Email__c = stdNameEmailMap.get(studentName)
+        );
+        apxioStudents.add(apxioStudent);
+    }
+    insert apxioStudents;
+}
