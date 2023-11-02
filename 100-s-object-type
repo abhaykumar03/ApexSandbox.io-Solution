@@ -1,9 +1,5 @@
-public Boolean isTypeAccount(sObject record)
-  if(record != null && record instanceof == 'Account')
-  {
-      return true;
-  }
-  else{
-      return false;
-  }
+public Boolean isTypeAccount(sObject record){
+    Object o = record;
+    Boolean result = o instanceof Account;
+    return true;
 }
